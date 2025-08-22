@@ -1,0 +1,8 @@
+pandas>=1.4
+numpy>=1.22
+yfinance>=0.2.25
+matplotlib>=3.5
+statsmodels>=0.13
+scipy>=1.8
+scikit-learn>=1.0
+pmdarima>=2.0 # optional, remove if you don't want auto_arima
