@@ -27,10 +27,10 @@ Open a terminal in that folder (or open the folder in VS Code / PyCharm).
 
 Windows (PowerShell)
 
-'''powershell
+```
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
-
+```
 
 macOS / Linux
 
