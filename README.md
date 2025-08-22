@@ -27,35 +27,42 @@ Open a terminal in that folder (or open the folder in VS Code / PyCharm).
 
 Windows (PowerShell)
 
+'''powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
 
 macOS / Linux
 
+```
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
 
 Install required packages:
-
+```
 pip install pandas numpy yfinance matplotlib statsmodels scipy scikit-learn pmdarima
-
+```
 
 (If you don’t want pmdarima, omit it — the scripts still work with plain ARIMA.)
 
 Run the forecast script (this creates AAPL_engineered_and_forecast.csv by default):
 
+```
 python forecast_hybrid.py
-
+```
 
 — If you want another ticker or date range, open forecast_hybrid.py and change TICKER, START_DATE, END_DATE at the top.
 
 Run the test/evaluation script (reads the CSV and shows events/plot):
 
+```
 python test_evaluate_forecast.py
-
+```
 
 — To save detected events to CSV:
 
+```
 python test_evaluate_forecast.py --save
+```
